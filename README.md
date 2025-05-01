@@ -30,135 +30,129 @@ Happy Coding! 💻✨
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HTML5 Multimedia & Form Validation</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Multimedia-Rich Webpage</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    table, th, td {
+      border: 1px solid #333;
+      border-collapse: collapse;
+      padding: 8px;
+    }
+    form {
+      margin-top: 20px;
+    }
+  </style>
 </head>
 <body>
 
-  <!-- Ordered List with Roman Numerals -->
-  <section>
-    <h2>Ordered List of Tasks</h2>
-    <ol type="I">
-      <li>Prepare breakfast</li>
-      <li>Complete assignment</li>
-      <li>Exercise</li>
-      <li>Attend meeting</li>
-      <li>Relax</li>
-    </ol>
-  </section>
+  <!-- Heading -->
+  <h1>Welcome to My Multimedia Page</h1>
 
-  <!-- External Image from Pexels -->
-  <section>
-    <h2>Beautiful Landscape</h2>
-    <img src="https://images.pexels.com/photos/207983/pexels-photo-207983.jpeg" alt="Landscape view" style="max-width: 100%; height: auto;">
-  </section>
+  <!-- Ordered List with Roman Numerals -->
+  <h2>My Top 3 Hobbies</h2>
+  <ol type="I">
+    <li>Reading</li>
+    <li>Traveling</li>
+    <li>Coding</li>
+  </ol>
+
+  <!-- Embedded Image -->
+  <h2>Featured Image</h2>
+  <img src="https://images.pexels.com/photos/414171/pexels-photo-414171.jpeg" alt="Nature Scene" width="400">
 
   <!-- Table of Contacts -->
-  <section>
-    <h2>Contact List</h2>
-    <table border="1" cellpadding="10">
-      <thead>
-        <tr>
-          <th>Name</th>
-          <th>Address</th>
-          <th>Mobile</th>
-          <th>Email</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>John Doe</td>
-          <td>123 Elm St, City</td>
-          <td>555-1234</td>
-          <td>johndoe@example.com</td>
-        </tr>
-        <tr>
-          <td>Jane Smith</td>
-          <td>456 Oak St, Town</td>
-          <td>555-5678</td>
-          <td>janesmith@example.com</td>
-        </tr>
-        <tr>
-          <td>Mike Johnson</td>
-          <td>789 Pine St, Village</td>
-          <td>555-9876</td>
-          <td>mikejohnson@example.com</td>
-        </tr>
-        <tr>
-          <td>Emily Davis</td>
-          <td>101 Maple St, Suburb</td>
-          <td>555-3456</td>
-          <td>emilydavis@example.com</td>
-        </tr>
-        <tr>
-          <td>Chris Lee</td>
-          <td>202 Birch St, City</td>
-          <td>555-6543</td>
-          <td>chrislee@example.com</td>
-        </tr>
-      </tbody>
-    </table>
-  </section>
+  <h2>Contact List</h2>
+  <table>
+    <tr>
+      <th>Name</th>
+      <th>Address</th>
+      <th>Mobile</th>
+      <th>Email</th>
+    </tr>
+    <tr>
+      <td>Alice</td>
+      <td>Nairobi</td>
+      <td>0712345678</td>
+      <td>alice@example.com</td>
+    </tr>
+    <tr>
+      <td>Bob</td>
+      <td>Kisumu</td>
+      <td>0723456789</td>
+      <td>bob@example.com</td>
+    </tr>
+    <tr>
+      <td>Carol</td>
+      <td>Mombasa</td>
+      <td>0734567890</td>
+      <td>carol@example.com</td>
+    </tr>
+    <tr>
+      <td>Dan</td>
+      <td>Nakuru</td>
+      <td>0745678901</td>
+      <td>dan@example.com</td>
+    </tr>
+    <tr>
+      <td>Eva</td>
+      <td>Eldoret</td>
+      <td>0756789012</td>
+      <td>eva@example.com</td>
+    </tr>
+  </table>
 
   <!-- Registration Form -->
-  <section>
-    <h2>Registration Form</h2>
-    <form action="/submit" method="POST" novalidate>
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
+  <h2>Register Here</h2>
+  <form>
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name" required placeholder="Enter your full name"><br><br>
 
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" required placeholder="Enter your email"><br><br>
 
-      <label for="password">Password:</label>
-      <input type="password" id="password" name="password" placeholder="Enter your password" required><br><br>
+    <label for="password">Password:</label><br>
+    <input type="password" id="password" name="password" required minlength="6" placeholder="Create a password"><br><br>
 
-      <label for="dob">Date of Birth:</label>
-      <input type="date" id="dob" name="dob" required><br><br>
+    <label for="dob">Date of Birth:</label><br>
+    <input type="date" id="dob" name="dob" required><br><br>
 
-      <!-- Dropdown Menu -->
-      <label for="country">Country:</label>
-      <select id="country" name="country" required>
-        <option value="us">United States</option>
-        <option value="ca">Canada</option>
-        <option value="uk">United Kingdom</option>
-      </select><br><br>
+    <label for="gender">Gender:</label><br>
+    <input type="radio" name="gender" value="Male" required> Male
+    <input type="radio" name="gender" value="Female" required> Female<br><br>
 
-      <!-- Radio Buttons -->
-      <label>Gender:</label>
-      <input type="radio" id="male" name="gender" value="male" required>
-      <label for="male">Male</label>
-      <input type="radio" id="female" name="gender" value="female">
-      <label for="female">Female</label><br><br>
+    <label for="country">Country:</label><br>
+    <select id="country" name="country" required>
+      <option value="">--Select--</option>
+      <option value="Kenya">Kenya</option>
+      <option value="Uganda">Uganda</option>
+      <option value="Tanzania">Tanzania</option>
+    </select><br><br>
 
-      <!-- Checkboxes -->
-      <label for="subscribe">Subscribe to newsletter:</label>
-      <input type="checkbox" id="subscribe" name="subscribe" value="yes"><br><br>
+    <label>Interests:</label><br>
+    <input type="checkbox" name="interests" value="Music"> Music
+    <input type="checkbox" name="interests" value="Sports"> Sports
+    <input type="checkbox" name="interests" value="Tech"> Tech<br><br>
 
-      <!-- Submit Button -->
-      <button type="submit">Register</button>
-    </form>
-  </section>
+    <input type="submit" value="Register">
+  </form>
 
-  <!-- Audio Element -->
-  <section>
-    <h2>Audio Example</h2>
-    <audio controls>
-      <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mp3">
-      Your browser does not support the audio element.
-    </audio>
-  </section>
+  <!-- Embedded Audio -->
+  <h2>Sample Audio</h2>
+  <audio controls>
+    <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
 
-  <!-- Video Element -->
-  <section>
-    <h2>Video Example</h2>
-    <video controls width="600">
-      <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
-      Your browser does not support the video element.
-    </video>
-  </section>
+  <!-- Embedded Video -->
+  <h2>Sample Video</h2>
+  <video width="400" controls>
+    <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
 
 </body>
 </html>
-
